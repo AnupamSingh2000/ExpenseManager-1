@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6E8F8"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter Expense Details"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/etexpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdetails"
+        android:hint="Expense Type"
+
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/etamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Amount Spent"
+        android:inputType="number"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/etdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Date(DDMMYYYY)"
+        android:inputType="number"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="Current Location"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/getlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Press to get location"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="30dp"
+        android:text="Add Expense"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Update Expense"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Delete data"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Show Expense"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/createpdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Bill"
+        android:textSize="24dp" />
+
+</LinearLayout>
